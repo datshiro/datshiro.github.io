@@ -4,10 +4,10 @@
     <title>Dat Shiro Blog</title>
     <description>Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
 </description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jan 2020 18:11:03 +0700</pubDate>
-    <lastBuildDate>Wed, 29 Jan 2020 18:11:03 +0700</lastBuildDate>
+    <link>http://barber.samesies.io</link>
+    <atom:link href="http://barber.samesies.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Jan 2020 18:26:34 +0700</pubDate>
+    <lastBuildDate>Wed, 29 Jan 2020 18:26:34 +0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -63,12 +63,32 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 29 Jan 2020 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/2020/01/29/vuex/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/01/29/vuex/</guid>
+        <link>http://barber.samesies.io/2020/01/29/vuex/</link>
+        <guid isPermaLink="true">http://barber.samesies.io/2020/01/29/vuex/</guid>
         
         <category>Tech</category>
         
         <category>Vue</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Review Book - Vọng Sài Gòn</title>
+        <description>&lt;h1 id=&quot;quyển-sách-kể-về-những-giai-kỳ-của-một-sài-gòn-sầm-uất&quot;&gt;Quyển sách kể về những giai kỳ của một Sài Gòn sầm uất&lt;/h1&gt;
+&lt;p&gt;Tác giả: Trác Thúy Miêu&lt;/p&gt;
+
+&lt;p&gt;Tôi không phải là người dân Sài Gòn gốc rặc mà thay vào đó chỉ là 1 chàng trai sinh viên mới ra trường, ngót ngén ăn nhờ ở đậu giữa thành phố này cũng chỉ mới được một năm, nhưng lạ thay thì tôi lại có một cảm giác đặc biệt với thành phố này. Nó đông đúc, ồn ào, nhưng nồng nhiệt và hào sảng bởi những con người dân nơi đây.&lt;/p&gt;
+
+&lt;p&gt;Một hôm tình cờ thì tôi lại biết được tới quyển sách này thông qua một đoạn video của chị Trác Thúy Miêu, tôi thực sự thích chị vì lối văn phong rặc chất nam bộ, cùng với đài từ vô cùng phong phú. Bên cạnh đó là những quan niệm về cuộc sống, tình yêu, văn hóa của chị làm tôi thật sự xúc động, bởi vậy mà khi phát hiện ra có 1 cuốn sách của Trác Thúy Miêu, không do dự, tôi đã đặt mua ngay.&lt;/p&gt;
+
+&lt;h1 id=&quot;chúng-ta-đã-sống-ở-thành-phố-này-lâu-như-vậy-nhưng-chúng-ta-có-biết-gì-về-nó-không&quot;&gt;Chúng ta đã sống ở thành phố này lâu như vậy, nhưng chúng ta có biết gì về nó không?&lt;/h1&gt;
+</description>
+        <pubDate>Wed, 29 Jan 2020 00:00:00 +0700</pubDate>
+        <link>http://barber.samesies.io/2020/01/29/vong-sai-gon/</link>
+        <guid isPermaLink="true">http://barber.samesies.io/2020/01/29/vong-sai-gon/</guid>
+        
+        <category>book-review</category>
         
         
       </item>
