@@ -65,6 +65,10 @@
 <lastmod>2017-10-23T00:00:00+07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/01/29/vuex/</loc>
+<lastmod>2020-01-29T00:00:00+07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
@@ -90,5 +94,11 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/dummy-text/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/tech/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/vue/</loc>
 </url>
 </urlset>

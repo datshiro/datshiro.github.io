@@ -1,0 +1,53 @@
+---
+layout: post
+title: "What is Vuex?"
+date: 2020-01-29
+description:
+image: /assets/images/placeholder-31.jpg
+author: Dat Shiro
+tags:
+  - Tech
+  - Vue
+---
+
+If you're building a medium to large sized app, your state — all the data you need to keep track of — can get pretty complicated.
+
+It's not just the amount of information you have to deal with either. The different interactions between your state and all of the different ways your state can change only add to this complexity.
+
+Managing state is a difficult task! So many bugs and wasted time are due to very complicated state and logic.
+
+That's why Evan You created Vuex to go along with Vue.
+
+It's not necessary to use for small projects or projects with simple state. But for larger projects, it's absolutely essential.
+
+And here's an interesting fact.
+
+Evan You originally intended Vuex to be pronounced "vukes" — rhyming with "pukes". But so many people pronounced it as "view-ex" that he changed his mind 😂.
+
+## What is Vuex? and what can Vuex solves?
+  There are cases that you want to share data, state between your components, using Vuex is what you should thinking about.
+  First, we should go through to know "Flux" which forms the basis of Vuex, Redux and other similar libraries.
+
+### Flux is a design pattern, not a library
+  The idea of Flux is that defining a set of guiding principles for a scalable front end architecture which is suitable for complex UI app with components and shared data state.
+
+  Vuex and Redux are actually implementation of Flux pattern
+  Vuex, in fact, does not implement fully of Flux. Instead, we only need to focus on some key principles below.
+
+> #### Principle #1: Single Source of Truth
+  As we've known, every component has local data and they don't care about the other components as well. But if there is any data need to be shared between components needs to be kept in a single place - called **"Store"**.
+
+> #### Principle #2: Data is Read-Only
+  Components are freely to read data from "Store", but they **cannot change** the data **directly**. Instead, they must inform the changes to "Store" through set of defined methods called **"Mutation"**
+
+> #### Principle #3: Mutations Must Be Synchronous
+  Synchronous Mutations ensure state is not dependent on any sequence and timing events. For example, callback function inside an asynchronous call, any mutation performed in the callback is essentially un-trackable
+
+## Conclusion
+  Vuex is a library that help us to implement the Flux architecture and enforce the described principles above. So that,
+  your application data can be transparent and predictable when the data is shared accross multiple components.
+  This article is only prepare you some knowledge in order to continue research on how to use Vuex and Store. I hope
+  you will feel well equiped to get the answers you looking for
+
+## References
+- [WTF is Vuex? A Beginner's Guide To Vue's Application Data Store](https://vuejsdevelopers.com/2017/05/15/vue-js-what-is-vuex/)
