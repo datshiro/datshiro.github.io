@@ -4,10 +4,10 @@
     <title>Dat Shiro Blog</title>
     <description>Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
 </description>
-    <link>http://barber.samesies.io</link>
-    <atom:link href="http://barber.samesies.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jan 2020 18:26:34 +0700</pubDate>
-    <lastBuildDate>Wed, 29 Jan 2020 18:26:34 +0700</lastBuildDate>
+    <link>https://datshiro.github.io/</link>
+    <atom:link href="https://datshiro.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Jan 2020 19:20:34 +0700</pubDate>
+    <lastBuildDate>Wed, 29 Jan 2020 19:20:34 +0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -63,8 +63,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 29 Jan 2020 00:00:00 +0700</pubDate>
-        <link>http://barber.samesies.io/2020/01/29/vuex/</link>
-        <guid isPermaLink="true">http://barber.samesies.io/2020/01/29/vuex/</guid>
+        <link>https://datshiro.github.io//2020/01/29/vuex/</link>
+        <guid isPermaLink="true">https://datshiro.github.io//2020/01/29/vuex/</guid>
         
         <category>Tech</category>
         
@@ -85,8 +85,8 @@
 &lt;h1 id=&quot;chúng-ta-đã-sống-ở-thành-phố-này-lâu-như-vậy-nhưng-chúng-ta-có-biết-gì-về-nó-không&quot;&gt;Chúng ta đã sống ở thành phố này lâu như vậy, nhưng chúng ta có biết gì về nó không?&lt;/h1&gt;
 </description>
         <pubDate>Wed, 29 Jan 2020 00:00:00 +0700</pubDate>
-        <link>http://barber.samesies.io/2020/01/29/vong-sai-gon/</link>
-        <guid isPermaLink="true">http://barber.samesies.io/2020/01/29/vong-sai-gon/</guid>
+        <link>https://datshiro.github.io//2020/01/29/vong-sai-gon/</link>
+        <guid isPermaLink="true">https://datshiro.github.io//2020/01/29/vong-sai-gon/</guid>
         
         <category>book-review</category>
         
