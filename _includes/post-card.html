@@ -7,6 +7,15 @@
     {% endif %}
     <div>
       <h2 class="posts__text"><strong itemprop="name">{{ post.title }}</strong> — <span itemprop="description">{{ post.content | strip_html | truncatewords: 35, "" }}</span></h2>
+      {% if post.tags %}
+        <div class="posts__tag">
+          {% for tag in post.tags %}
+            <span >
+              {{ tag  }}
+            </span>
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   </a>
 </article>
