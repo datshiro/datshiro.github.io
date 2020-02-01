@@ -7,6 +7,7 @@ image: /assets/images/placeholder-30.jpg
 author: Dat Shiro
 tags:
   - book-review
+published: false
 ---
 
 # Quyển sách kể về những giai kỳ của một Sài Gòn sầm uất
