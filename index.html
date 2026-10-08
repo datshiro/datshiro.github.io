@@ -165,7 +165,8 @@ button.span-row:hover, .span-row[aria-expanded="true"] { background: var(--panel
 :root:not([data-theme="dark"]) .ic.lt { fill: #b08900; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ic.dk { fill: var(--text); } }
 :root[data-theme="dark"] .ic.dk { fill: var(--text); }
-.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 20px; }
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px 20px; }
+.svc p { margin: 6px 0 0; font-size: 13px; }
 .svc-grid .svc { border-top: 0; padding: 0; }
 .svc-grid .svc-h { display: grid; grid-template-columns: 8px 1fr; gap: 1px 8px; align-items: baseline; }
 .svc-grid .svc-h .owner { grid-column: 2; margin-left: 0; }
@@ -293,7 +294,7 @@ footer.logline .ok { color: var(--green); }
     <span>env=<b style="color:var(--text)">prod</b> · region=ho-chi-minh-city</span>
     <span class="spacer"></span>
     <span>range: 2019-06 → now</span>
-    <a class="screen-only" href="/cv/Dat_Nguyen_Quoc_2026_Dashboard.pdf" download>⤓ pdf</a>
+    <a class="screen-only" href="/cv/Dat_Nguyen_Quoc_2026_Detailed.pdf" download>⤓ pdf</a>
     <a class="screen-only" href="/blog/">blog</a>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle colour theme">◐ theme</button>
   </nav>
@@ -397,11 +398,12 @@ footer.logline .ok { color: var(--green); }
         <ul class="logs">
           <li><span class="lvl">BUILD</span><span>Architect and develop SaaS solutions for the Game Publishing Platform — automated campaign rollouts, user segmentation and multi-channel notifications for VNG's flagship titles.</span></li>
           <li><span class="lvl">SCALE</span><span>Design and implement systems processing <b>17M+ requests/events daily</b> with high availability and performance.</span></li>
+          <li><span class="lvl">BUILD</span><span>Initiated and architected two core services from scratch (<b>Segment Service</b>, <b>Journey Trigger</b>) and own the event-driven pipeline from event ingestion to message delivery.</span></li>
           <li><span class="lvl">DESIGN</span><span>Lead architecture of the <b>Segment Service</b>: a dynamic query builder for extracting user segments from the data warehouse, on a scalable pipeline supporting diverse business use cases.</span></li>
           <li><span class="lvl">PERF</span><span>Architect the <b>Orchestration Journey Service</b>: event-driven workflow automation that triggers real-time in-app, SMS and email interactions from behavioural conditions; tuned Temporal to hold a <b>&lt;3s latency SLA at 200 req/s</b> with <b>99.95% uptime</b>.</span></li>
           <li><span class="lvl">PERF</span><span>After the Temporal persistence move from Cassandra to Vitess (sharded MySQL) in June 2026, led the capacity &amp; SLA campaign (45+ load tests): raised the load-tested clean ceiling <b>1.75×</b> to <b>700 events/s (~2,620 workflow starts/s)</b> with every Temporal layer at <b>p95 under 400ms</b> and database p95 ~4ms.</span></li>
           <li><span class="lvl">LEAD</span><span>Promoted to Technical Lead (Apr 2026); scope expanded from a team of 3 engineers to managing a <b>cross-functional team of 7</b> (backend, frontend, QE); own roadmaps aligned with product milestones.</span></li>
-          <li><span class="lvl">LEAD</span><span>Reworked team operations so members spend more time on technical solution practice, raising motivation and dedication across the team.</span></li>
+          <li><span class="lvl">LEAD</span><span>Moved the team from siloed ownership, where each engineer knew only their own service, to shared ownership of the whole product, introducing practices that encourage engineers to work across services.</span></li>
           <li><span class="lvl">AI</span><span>Drove full adoption of AI across the SDLC: built Go MCP servers giving AI agents access to platform debugging tools and test/staging APIs, plus custom agents for MR review, deployment and Jira refinement.</span></li>
           <li><span class="lvl">BUILD</span><span>Maintain the shared Go platform library used across the team's services (observability, Temporal, Kafka, data clients).</span></li>
           <li><span class="lvl">LEAD</span><span>Lead technical discussions with game studios — translate business requirements into technical specs; coordinate with Product Owner and Data Studio teams.</span></li>
@@ -411,7 +413,7 @@ footer.logline .ok { color: var(--green); }
 
       <!-- Vulcan Labs: Dec 2021 → Aug 2024 -->
       <button class="span-row co-vul" type="button" aria-expanded="false" aria-controls="d-vul">
-        <span class="span-name"><span class="chev">▶</span><span>Vulcan Labs<small>Backend Engineer → Senior → Team Leader</small></span></span>
+        <span class="span-name"><span class="chev">▶</span><span>Vulcan Labs<small>Senior Software Developer → Team Leader</small></span></span>
         <span class="track"><span class="bar" style="left:36.46%;width:33.33%"></span></span>
         <span class="dur">2y 8m</span>
       </button>
@@ -421,32 +423,28 @@ footer.logline .ok { color: var(--green); }
         <span class="dur">1y 1m</span>
       </div>
       <div class="span-row child co-vul">
-        <span class="span-name"><span>Senior Engineer</span></span>
-        <span class="track"><span class="bar" style="left:44.79%;width:11.46%"></span></span>
-        <span class="dur">11m</span>
-      </div>
-      <div class="span-row child co-vul">
-        <span class="span-name"><span>Backend Engineer</span></span>
-        <span class="track"><span class="bar" style="left:36.46%;width:8.33%"></span></span>
-        <span class="dur">8m</span>
+        <span class="span-name"><span>Senior Software Developer</span></span>
+        <span class="track"><span class="bar" style="left:36.46%;width:19.79%"></span></span>
+        <span class="dur">1y 7m</span>
       </div>
 
       <div class="span-detail co-vul" id="d-vul">
         <div class="attrs">
           <span class="attr">company=<b>Vulcan Labs</b></span>
-          <span class="attr">teams=<b>2 cross-functional</b></span>
-          <span class="attr">team.size=<b>4 engineers</b></span>
+          <span class="attr">team.size=<b>3 BE · 3 AI</b></span>
           <span class="attr">scale=<b>1.5M+ req/day</b></span>
         </div>
         <ul class="logs">
-          <li><span class="lvl">LEAD</span><span>Promoted Backend Engineer → Senior Engineer (Aug 2022) → Team Leader (Jul 2023); led 2 cross-functional teams of backend engineers and AI researchers delivering AI-powered mobile apps to global users.</span></li>
+          <li><span class="lvl">LEAD</span><span>Team Leader (Jul 2023–Aug 2024): led a cross-functional team of <b>3 backend and 3 AI engineers</b>, taking AI features from model to production API in the company's mobile apps.</span></li>
+          <li><span class="lvl">LEAD</span><span>Led the team behind <b>AI Chat Smith</b>, the company's record-breaking app.</span></li>
+          <li><span class="lvl">DESIGN</span><span>Worked directly with multiple product teams, collecting requirements from Product Owners and Marketers and turning them into technical designs and delivery plans.</span></li>
           <li><span class="lvl">OWN</span><span>Owned all API servers for the mobile apps, handling <b>1.5M+ daily requests</b> from users worldwide.</span></li>
-          <li><span class="lvl">DESIGN</span><span>Turned Marketing/Product requirements into technical designs; oversaw end-to-end development and deployment of AI services.</span></li>
+          <li><span class="lvl">OPS</span><span>Moved deployments to GKE with Grafana/Prometheus monitoring and DDoS protection via Cloud Armor and Cloudflare; designed ETL pipelines for marketing metrics.</span></li>
+          <li><span class="lvl">BUILD</span><span>Senior Software Developer (Dec 2021–Jul 2023): as the company's <b>only backend engineer</b>, built, shipped and maintained all backend and API services behind a fast-moving portfolio of mobile apps.</span></li>
+          <li><span class="lvl">OPS</span><span>Owned deployment end to end: containerised services run on GCP virtual machines with Docker Compose and Docker Swarm.</span></li>
           <li><span class="lvl">BUILD</span><span>Established the codebase architecture on Clean Architecture principles; built internal libraries for service reliability and consistency.</span></li>
-          <li><span class="lvl">OPS</span><span>Ran containerised services on GKE with Grafana/Prometheus monitoring and DDoS protection via Cloud Armor and Cloudflare.</span></li>
-          <li><span class="lvl">DATA</span><span>Designed and built ETL pipelines for marketing metrics aggregation and visualisation.</span></li>
         </ul>
-        <div class="stack"><b>stack:</b> Golang · GKE · Cloud Armor · Cloudflare · Redis · PostgreSQL · Grafana · Prometheus · Docker</div>
+        <div class="stack"><b>stack:</b> Golang · Docker Swarm · GKE · Cloud Armor · Cloudflare · Redis · PostgreSQL · Grafana · Prometheus</div>
       </div>
 
 
@@ -477,30 +475,78 @@ footer.logline .ok { color: var(--green); }
 
       <div class="svc-grid">
       <div class="svc co-vng">
-        <div class="svc-h"><span class="dot"></span><b>Game Publishing Platform — Orchestration &amp; Segmentation</b><span class="owner">VNG</span></div>
+        <div class="svc-h"><span class="dot"></span><b>Orchestration Journey Platform</b><span class="owner">VNG · Jul 2025–now</span></div>
+        <p>Event-driven automation that lets game operators react to player behaviour in real time: Kafka events, trigger rules, then Temporal workflows ending in in-app, push, SMS or email messages.</p>
         <ul>
-          <li>Event-driven architecture for real-time campaign orchestration handling 17M+ daily events.</li>
-          <li>Dynamic segmentation engine with a configurable query builder over the data warehouse.</li>
-          <li>Temporal-based workflow automation for complex multi-step campaign journeys.</li>
-          <li>&lt;3s latency SLA at 200 req/s with 99.95% uptime for real-time interaction triggers.</li>
-          <li>Load-tested capacity of 700 events/s (~2,620 workflow starts/s) on Temporal + Vitess, p95 under 400ms per layer.</li>
+          <li>Initialized the trigger service: Kafka consumer groups, per-source de-duplication, expression-based rules, frequency capping and country gating.</li>
+          <li>Set up the Temporal workflow worker; extended the journey configuration API with timezone-aware rule anchors and reserved-field validation.</li>
+          <li>Built workflow nodes: A/B tests, cache and role-state lookups, HMAC-signed partner requests.</li>
+          <li>Tuned Temporal to a <b>&lt;3s latency SLA at 200 req/s</b> with <b>99.95% uptime</b>.</li>
+          <li>End-to-end player-identity and trace context across trigger, workflow and node logs.</li>
         </ul>
+        <div class="stack"><b>stack:</b> Golang · Temporal · Kafka · expr-lang · Redis · MongoDB · OpenTelemetry</div>
+      </div>
+      <div class="svc co-vng">
+        <div class="svc-h"><span class="dot"></span><b>Temporal Capacity &amp; SLA Campaign</b><span class="owner">VNG · Jun–Jul 2026</span></div>
+        <p>After Temporal persistence moved from Cassandra to Vitess, the stack needed a measured capacity and a tuned configuration.</p>
+        <ul>
+          <li>Led <b>45+ staging load tests</b>, attributing each bottleneck to a single stack layer before tuning it.</li>
+          <li>Tuned Temporal history, matching and frontend (shard IO, memory, sticky cache, pod spreading) through reversible GitOps changes.</li>
+          <li>Raised the clean ceiling <b>1.75×, 400 → 700 events/s</b> (~2,620 workflow starts/s), every layer p95 under 400ms, DB p95 ~4ms.</li>
+          <li>Identified the next limit: synchronous per-message gate checks in trigger ingestion.</li>
+        </ul>
+        <div class="stack"><b>stack:</b> Temporal · Vitess · Kubernetes · ArgoCD · Helm · k6 · Grafana</div>
+      </div>
+      <div class="svc co-vng">
+        <div class="svc-h"><span class="dot"></span><b>Segment Service</b><span class="owner">VNG · Dec 2024–now</span></div>
+        <p>Builds player audiences (past behaviour, churn, RFM, imported) from the data warehouse so operators can target campaigns without SQL.</p>
+        <ul>
+          <li>Initialized the service from the team's Go service template.</li>
+          <li>Engineered a <b>dynamic query builder</b> over ClickHouse fact and CDP tables, with dry-run previews.</li>
+          <li>Built Parquet/S3 segment import and a dimension-mapping pipeline (phone standardisation, device tokens).</li>
+          <li>Temporal workflows for idempotent segment refresh and versioning.</li>
+        </ul>
+        <div class="stack"><b>stack:</b> Golang · ClickHouse · MongoDB · Temporal · S3/Parquet · gRPC</div>
+      </div>
+      <div class="svc co-vng">
+        <div class="svc-h"><span class="dot"></span><b>Multi-channel Messaging &amp; Delivery</b><span class="owner">VNG · Jan 2025–now</span></div>
+        <p>Delivers campaign messages over in-app, push, SMS and webview, and lets external partners send notifications through scoped APIs.</p>
+        <ul>
+          <li>Partner integrations: tenant-scoped Kafka topics, game/product-scoped API keys with rate limits and idempotency, pluggable signing/encryption with key versioning.</li>
+          <li>Delivery-funnel and ACK metrics per game and campaign; real-time publish rejections surfaced fail-closed.</li>
+          <li>Per-campaign SDK event metrics with cardinality agreed with SRE.</li>
+        </ul>
+        <div class="stack"><b>stack:</b> Golang · Kafka · Centrifugo · MongoDB · Redis · Prometheus</div>
+      </div>
+      <div class="svc co-vng">
+        <div class="svc-h"><span class="dot"></span><b>Campaign Portal &amp; Shared Go Library</b><span class="owner">VNG · Aug 2024–now</span></div>
+        <p>The operators' entry point for campaigns and segments, plus the Go library every team service builds on.</p>
+        <ul>
+          <li>Multi-market routing in the portal behind SSO and role-based access control.</li>
+          <li>Shared library: OpenTelemetry and Temporal trace propagation, self-healing Kafka consumers, HMAC signing with key rotation, log redaction by default.</li>
+          <li>GitOps deployments (Helm, ArgoCD) and HIGH/CRITICAL CVE patching.</li>
+        </ul>
+        <div class="stack"><b>stack:</b> Golang · Gin · gRPC · MongoDB · Kafka · Helm · ArgoCD</div>
+      </div>
+      <div class="svc co-vng">
+        <div class="svc-h"><span class="dot"></span><b>AI-Assisted SDLC Tooling</b><span class="owner">VNG · Apr 2026–now</span></div>
+        <p>Tooling that gives AI coding agents safe access to platform knowledge, debugging data and test/staging APIs.</p>
+        <ul>
+          <li>Go <b>MCP servers</b> for platform debugging (logs, metrics, traces) and authenticated test/staging API calls.</li>
+          <li>A platform knowledge base with semantic search, kept in sync with source, plus an install CLI for every engineer.</li>
+          <li>Custom agents and skills for MR review, deployment, Jira refinement and sprint sync.</li>
+        </ul>
+        <div class="stack"><b>stack:</b> Golang · MCP · Claude Code · Cobra · Bubble Tea</div>
       </div>
       <div class="svc co-vul">
-        <div class="svc-h"><span class="dot"></span><b>AI Ecosystem Platform</b><span class="owner">Vulcan Labs</span></div>
+        <div class="svc-h"><span class="dot"></span><b>AI Ecosystem Platform &amp; AI Chat Smith</b><span class="owner">Vulcan Labs · 2022–2024</span></div>
+        <p>A cross-platform ecosystem with unified accounts and subscriptions, including AI Chat Smith, a mobile ChatGPT app that launched as an MVP and broke the company's previous records.</p>
         <ul>
-          <li>Cross-platform ecosystem consolidating AI products under unified subscription management.</li>
-          <li>User management and subscription systems supporting multi-platform access.</li>
-          <li>Credit-based monetisation with fraud prevention and automated renewal handling.</li>
+          <li>Architected user management and subscription systems for multi-platform access.</li>
+          <li>Credit-based monetisation with fraud prevention and automated renewals.</li>
+          <li>Chat Smith API serving <b>1.5M+ daily requests</b>, smoothly at <b>200–300 req/s</b>, with abuse prevention, on GKE behind Cloud Armor.</li>
         </ul>
-      </div>
-      <div class="svc co-vul">
-        <div class="svc-h"><span class="dot"></span><b>AI Chat Smith — high-scale ChatGPT service</b><span class="owner">Vulcan Labs</span></div>
-        <ul>
-          <li>Mobile-optimised ChatGPT service handling 1.5M+ daily requests from global users.</li>
-          <li>Cost-optimised API layer with abuse prevention and robust error handling.</li>
-          <li>Deployed on GKE behind Cloud Armor with a full observability stack.</li>
-        </ul>
+        <div class="stack"><b>stack:</b> Golang · PostgreSQL · Redis · GKE · Cloud Armor · Cloudflare</div>
       </div>
       </div>
     </section>
